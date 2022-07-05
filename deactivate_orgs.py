@@ -2,9 +2,7 @@ import json
 import csv 
 def get_database():
     from pymongo import MongoClient
-    import pymongo
     CONNECTION_STRING = "mongodb://localhost:27017"
-    from pymongo import MongoClient
     client = MongoClient(CONNECTION_STRING)
     print(client)
     return client['squadcast-dev']
